@@ -461,7 +461,7 @@ a {
 }
 
 .help__icons-wrapper {
-  margin-top: 5.5rem;
+  margin-top: 6rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -555,8 +555,8 @@ a {
 
 .footer__contacts {
   width: 30rem;
-  padding-top: 1.6rem;
-  padding-bottom: 6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 6rem;
 
   display: flex;
   flex-direction: column;
@@ -634,11 +634,6 @@ a {
     }
   }
 
-
-  
-  
-  
-  
   .help__icons-wrapper {
     column-gap: 6rem;
   }
@@ -647,6 +642,59 @@ a {
    width: 17.0rem;
    height: 11.3rem;
   }
+}
+
+.donation {
+  background-color: $color-light-l;
+  .wrapper {
+    flex-direction: column-reverse;
+    padding: 8rem 8rem 9.8rem 8rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+  }
+}
+
+
+.footer {
+  .wrapper {
+    padding: 3rem 3rem 0 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+  }
+  }
+
+.footer__contacts {
+  width: 30rem;
+  margin-top: 0;
+  margin-bottom: 6.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 3.3rem;
+}
+
+.contacts__title {
+  @include h3($color-light-xl, left);
+}
+.contacts__info a {
+  @include h4($color-primary);
+  text-decoration: none;
+}
+
+.contacts__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__img img {
+  width: 300px;
+  height: 310px;
 }
 
 
