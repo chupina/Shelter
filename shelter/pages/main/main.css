@@ -885,5 +885,40 @@ a {
   .hero__img img {
     width: 100%;
   }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .wrapper {
+    padding: 8rem 16.5rem 10rem 16.6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about__img-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8rem;
+    max-width: 30rem;
+    max-height: 40.8rem;
+  }
+  .help__icons-wrapper {
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
+  }
+  .help__icon-card {
+    width: 17.0rem;
+    height: 11.3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
