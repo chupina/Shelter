@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pets.css" />
+    <script src="pets.js" defer></script>
+    <title>Shelter</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a href="../main/main.html"><div class="logo">
+          <div class="logo__title">Cozy House</div>
+          <div class="logo__subtitle">Shelter for pets in Boston</div>
+        </div></a>
+        <div class="burger-menu" id="burger-menu-icon"><img src="../../assets/Burgerwhite.svg" alt="menu button" class="burger"></div>
+        
+        <nav class="menu mobile-menu">
+          
+          <ul class="list mobile" >
+         
+            <li class="list__item">
+              <a class="list__link list__link_disabled " href="../main/main.html"
+                >About the shelter</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list__link list__link_active" href="#">Our pets</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link list__link_disabled" href="#"
+                >Help the shelter</a
+              >
+            </li>
+            <li class="list__item">
+              <a class="list__link list__link_disabled" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+     
+      <section class="pets">
+        <div class="modal">
+          <div class="modal-card">
+           <button class="modal-close"><img  src="../../assets/Vector.svg" alt="close-modal"></button>
+            <div class="modal-card-info"></div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="pets__content-wrapper">
+            <div class="pets__title"><span>Our friends who</span><span>are looking for a house</span>
+              </div>
+            <div class="pets__slider">
+             
+                <ul class="pets__slider__cards-wrapper" id="pets__card-list">
+                
+                
+              </ul>
+              <div class="pagination"> 
+                <button class="page disabled-page" id="first-page" disabled><<</button>
+                <button class="page disabled-page" id="back-page" disabled><</button> 
+                  <button class="page active-page" id="current-page" >1</button>
+                  <button class="page" id="next-page">></button>
+                  <button class="page" id="last-page">>></button>
+              </div>
+             
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+    </main>
+      <footer class="footer">
+        <div class="wrapper">
+         <div class="footer__contacts">
+          <div class="contacts__title"> For questions and suggestions</div>
+          <div class="contacts__info"><img src="../../assets/mail.svg" alt="" class="pin"><a href="#">email@shelter.com</a></div>
+          <div class="contacts__info"><img src="../../assets/phone.svg" alt="" class="pin"><a href="#">+13 674 567 75 54</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="contacts__title">We are waiting for <span>your visit</span></div>
+          <div class="contacts__info"><img src="../../assets/pin.svg" alt="" class="pin"><a href="#">1 Central Street, Boston (entrance from the store)  </a></div>
+          <div class="contacts__info"><img src="../../assets/pin.svg" alt="" class="pin"><a href="#">18 South Park, London </a></div>
+        </div>
+        <div class="footer__img"><img src="../../assets/footer-puppy.png" alt="puppy" class="footer-puppy"></div>
+      </footer> 
+        </div>
+        
+      
+            
+    
+  </body>
+</html>
