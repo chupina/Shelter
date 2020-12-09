@@ -97,6 +97,17 @@ $font-paragraph: Arial, Helvetica, sans-serif;
 @mixin paragraph-s {
 }
 
+@mixin paragraph-mobile-menu {
+  font-family: Arial;
+ font-size: 3.2rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 5.1rem;
+ letter-spacing: 0px;
+ text-align: left;
+ 
+ }
+
 //buttons
 
 @mixin button($background, $width) {
@@ -298,9 +309,11 @@ a {
 }
 
 .pagination {
+  width: 34rem;
+  display: flex;
+  justify-content: space-between;
   .page {
-    margin-right: 9px;
-    margin-left: 9px;
+    
     @include button(inherit, 5.2rem);
     &:hover {
       @include button-hover();
@@ -358,6 +371,10 @@ a {
 .footer__img img {
   width: 300px;
   height: 310px;
+}
+
+.no-scroll{
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 1279px) {
@@ -418,60 +435,72 @@ a {
   .header {
     top: 3.1rem;
   }
-  .menu ul {
-    display: none;
-  }
   .burger-menu {
     display: flex;
-  }
-  .mobile-menu {
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    width: 300px;
-    height: 73rem;
-    background-color: #292929;
-
-    transform: translate3d(100vw, 0, 0);
-    transition: transform 0.5s ease-in-out;
-    &.show {
-      transform: translate3d(0, 0, 0);
-      transition: transform 0.5s ease-in-out;
-    }
-  }
-  .burger-menu {
-    display: flex;
-    cursor: pointer;
     position: absolute;
-    top: 2rem;
-    right: 5.8rem;
-    transition: transform 1s linear;
+    z-index: 9999;
+    cursor: pointer;
+    right: 5.3rem;
+    margin-top: 1.5rem;
+    transition: transform .5s ease-in-out;
     &.opened {
+      position: fixed;
       transform: rotate(90deg);
-      transition: transform 1s linear;
+      transform-origin: center;
+      transition: transform .5s ease-in-out;
     }
   }
-  .list {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    &.mobile {
-      margin-top: 15.6rem;
-      flex-direction: column;
+   
+     
+   
+   
+   .menu{
+   
+   position: fixed;
+   z-index:1;
+   justify-content:flex-end;
+    
+    width:100vw;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    display:flex;
+    background:rgba(41, 41, 41, .6);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    &.opened{
+    
+    left:0%;
+    
+    }
+    .list{
+      padding-top: 15.8rem;
+      width: 32rem;
+     flex-direction: column;
+     justify-content: start;
+     gap:4.3rem;
+    background-color:rgba(41, 41, 41, 1);
+// rgb(209, 54, 54)
+    &__item {
+      display: flex;
       align-items: center;
-      row-gap: 40px;
-      a {
-        font-family: Arial;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 32px;
-        line-height: 51px;
-        color: #cdcdcd;
-      }
+      justify-content: center;
     }
-  }
+    &__link {
+      @include paragraph-mobile-menu();
+
+      
+    }
+    &__link_disabled {
+      color: $color-dark-s;
+    }
+
+    &__link_active {
+      border-bottom: 4px solid $color-primary;
+      color: $color-light-s;
+    }
+}
+  
 
   .hero {
     padding-top: 15rem;
@@ -492,6 +521,10 @@ a {
     .pets__title {
       @include h3-mobile($color-dark-l);
     }
+    
+    
+    
+    
     .pet-card {
       margin-left: 2rem;
       margin-right: 2rem;
@@ -510,13 +543,9 @@ a {
       margin-top: 2.9rem;
       margin-bottom: 2.7rem;
     }
-    .page {
-      margin-left: 4px;
-      margin-right: 4px;
-    }
+     
   }
-
-
+ 
   .footer {
     .wrapper {
       padding: 3rem 1rem 0 1rem;
@@ -549,5 +578,5 @@ a {
     height: 27rem;
   }
   }
-
+}
 
