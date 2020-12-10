@@ -289,7 +289,7 @@ a {
   // position: relative;
   background: $color-light-l;
   .wrapper {
-    padding: 8rem 4rem 10rem 4rem;
+    padding: 8rem 0 10rem 0;
   }
 }
 
@@ -315,13 +315,17 @@ a {
     margin-top: 6rem;
     margin-bottom: 6rem;
     &__cards-wrapper {
-      width: 1080px;
+      padding-left: 5.3rem;
+      //padding-right: 5.3rem;
+     width: 100%;
       overflow: hidden;
       display: flex;
-      justify-content: space-between;
+      justify-content:space-between;
+      column-gap:9rem;
     }
     &__button {
       @include button(inherit, 5.2rem);
+     
       &:hover {
         @include button-hover();
       }
@@ -345,8 +349,7 @@ a {
   align-items: center;
   background-color: $color-light-s;
   border-radius: 0.9rem;
-  margin-left: 4.5rem;
-  margin-right: 4.5rem;
+   
   transition: all 0.7s ease-in;
   &:hover {
     background-color: $color-light-xl;
@@ -370,8 +373,7 @@ a {
   &__button {
     margin-top: 3.1rem;
     margin-bottom: 3rem;
-    align-self: center;
-    @include button($color-light-s, 18.7rem);
+   @include button($color-light-s, 18.7rem);
     &:hover {
       @include button-hover();
     }
@@ -647,6 +649,7 @@ a {
     }
   }
 
+  
   .help__icons-wrapper {
     column-gap: 6rem;
   }
@@ -685,6 +688,8 @@ a {
     justify-content: space-between;
     row-gap: 3.3rem;
   }
+
+
 }
 @media screen and (max-width: 767px) {
   .wrapper {

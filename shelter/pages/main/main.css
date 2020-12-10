@@ -267,7 +267,7 @@ a {
 }
 
 .pets .wrapper {
-  padding: 8rem 4rem 10rem 4rem;
+  padding: 8rem 0 10rem 0;
 }
 
 .pets__content-wrapper {
@@ -318,7 +318,8 @@ a {
 }
 
 .pets__content-wrapper .pets__slider__cards-wrapper {
-  width: 1080px;
+  padding-left: 5.3rem;
+  width: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +327,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 9rem;
+          column-gap: 9rem;
 }
 
 .pets__content-wrapper .pets__slider__button {
@@ -396,8 +399,6 @@ a {
           align-items: center;
   background-color: #fafafa;
   border-radius: 0.9rem;
-  margin-left: 4.5rem;
-  margin-right: 4.5rem;
   -webkit-transition: all 0.7s ease-in;
   transition: all 0.7s ease-in;
 }
@@ -426,9 +427,6 @@ a {
 .pet-card__button {
   margin-top: 3.1rem;
   margin-bottom: 3rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 18.7rem;
   height: 52px;
   border-radius: 100px;

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="main.css" />
     
     <title>Shelter</title>
@@ -96,26 +97,13 @@
             <div class="pets__title"><span>Our friends who</span><span>are looking for a house</span>
               </div>
             <div class="pets__slider">
-              <button class="pets__slider__button left"><img src="../../assets/Arrow.svg" alt="left arrow" class="arrow-left"></button>
-                <ul class="pets__slider__cards-wrapper" id='pets__card-list'>
-                <!-- <li class="pet-card" id ="1">
-                  <div class="pet-card__img-wrapper"><img src="../../assets/pets-katrine.png" alt="pet" class="pet-img"></div>
-                  <div class="pet-card__title">Katrine</div>
-                  <button class="pet-card__button">Learn more</button>
-                </li>
-                <li class="pet-card">
-                  <div class="pet-card__img-wrapper"><img src="../../assets/pets-jennifer.png" alt="pet" class="pet-img"></div>
-                  <div class="pet-card__title">Jennifer</div>
-                  <button class="pet-card__button">Learn more</button>
-                </li>
-                 <li class="pet-card">
-                  <div class="pet-card__img-wrapper"><img src="../../assets/pets-woody.png" alt="pet" class="pet-img"></div>
-                  <div class="pet-card__title">Woody</div>
-                  <button class="pet-card__button">Learn more</button>
-                </li> -->
+              <button class="pets__slider__button left" id="prev__slide" ><img src="../../assets/Arrow.svg" alt="left arrow" class="arrow-left"></button>
+                <ul class="pets__slider__cards-wrapper responsive " id='pets__card-list'>
+                
                 
               </ul>
-             <button class="pets__slider__button right"><img src="../../assets/Arrow.svg" alt="right arrow" class="arrow-right"></button>
+              
+             <button class="pets__slider__button right" id="next__slide"><img src="../../assets/Arrow.svg" alt="right arrow" class="arrow-right"></button>
             </div>
             <button class="pets__button">Get to know the rest</button>
           </div>
@@ -202,6 +190,7 @@
               
         </div>
       </section>
+      
     </main>
       <footer class="footer">
         <div class="wrapper">
@@ -217,9 +206,12 @@
         </div>
         <div class="footer__img"><img src="../../assets/footer-puppy.png" alt="puppy" class="footer-puppy"></div>
       </footer> 
+
         </div>
-        
-      
+     
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
             
         <script src="shelter.js"></script>   
   </body>
