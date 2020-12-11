@@ -325,6 +325,148 @@ a {
   background-color: #f1cdb3;
 }
 
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  z-index: 1000;
+  background-color: rgba(41, 41, 41, 0.6);
+  padding: 19rem;
+}
+
+.modal-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 952px;
+  height: 552px;
+  margin: auto;
+}
+
+.modal-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 900px;
+  height: 500px;
+  background-color: #fafafa;
+  -ms-flex-item-align: start;
+      align-self: start;
+  border-radius: 9px;
+}
+
+.modal-card-info img {
+  width: 500px;
+  height: 500px;
+}
+
+.modal-card-info-content {
+  width: 350px;
+  margin-right: 2rem;
+  margin-left: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.modal-card-info-content .pet-card__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 4.55rem;
+  letter-spacing: 0.21rem;
+  color: #000000;
+  text-align: left;
+}
+
+.modal-card-info-content .pet-card__subtitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.12rem;
+  color: #000000;
+}
+
+.modal-card-info-content .pet-card__description {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  letter-spacing: 0.09rem;
+  color: #000000;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.modal-card-info-content .pet-card__info {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  letter-spacing: 0.09rem;
+  color: #000000;
+  margin-left: 1rem;
+}
+
+.modal-card .modal-close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 5.2rem;
+  height: 52px;
+  border-radius: 100px;
+  background-color: inherit;
+  color: #292929;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  line-height: 2.2px;
+  font-weight: 400;
+  letter-spacing: 0.102rem;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #f1cdb3;
+          box-shadow: inset 0px 0px 0px 2px #f1cdb3;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
+}
+
+.modal-card .modal-close:hover {
+  background-color: #fddcc4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+}
+
 .footer {
   background: url(../../assets/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
 }
