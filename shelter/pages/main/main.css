@@ -318,6 +318,7 @@ a {
 }
 
 .pets__content-wrapper .pets__slider__cards-wrapper {
+  position: relative;
   padding-left: 5.3rem;
   width: 100%;
   overflow: hidden;

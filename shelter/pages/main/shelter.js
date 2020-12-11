@@ -31,7 +31,8 @@ fetch('../pets.json')
        return tempArr;
      })();
      petsSlider.appendChild(createCards(fullPetsList));
-     initSlider();
+     
+   
 
   }
 
@@ -51,41 +52,7 @@ fetch('../pets.json')
   }
 
 
-  // nextSlide.addEventListener('click',()=>{
-    
-  // })
-  
- const initSlider =()=>{
-  $(document).ready(function(){
-    $('.responsive').slick({
-      dots: false,
-      infinite: true,
-      prevArrow:document.getElementById('prev__slide'),
-      nextArrow:document.getElementById('next__slide'),
-      speed: 400,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        
-        {
-          breakpoint: 1279,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 760,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-       
-      ]
-    });
-  });
-
+ 
 // Burger-menu
 
 burgerButton.addEventListener('click',(event)=>{
@@ -107,5 +74,3 @@ burgerButton.addEventListener('click',(event)=>{
       event.stopPropagation();
       
     });
-
- } 
